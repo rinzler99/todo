@@ -1,0 +1,96 @@
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.todo-list-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.task-list li.completed {
+  background-color: #e5e5e5;
+  text-decoration: line-through;
+}
+
+.task-list li form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.task-list li input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.task-list li button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-list li button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+.task-list li .task-buttons button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 0;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.task-list li .task-buttons button:hover {
+  text-decoration: underline;
+}
+
+.task-list li .task-toggle {
+  color: #28a745;
+}
+
+.task-list li .task-toggle:hover {
+  color: #218838;
+}
+
+.task-list li .task-delete {
+  color: #dc3545;
+}
+
+.task-list li .task-delete:hover {
+  color: #c82333;
+}
+
+.task-list li .task-edit {
+  color: #ffc107;
+}
+
+.task-list li .task-edit:hover {
+  color: #e0a800;
+}
